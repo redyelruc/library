@@ -1,0 +1,68 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: white;
+    overflow: hidden;
+  }
+  
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 3px 3px;
+    margin-right: 3px;
+    text-decoration: none;
+    font-size: 2vw;
+  }
+
+#nav-right {
+    float: right;
+}
+  
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: green;
+    color: white;
+  }
+  
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #5e4caf;
+    color: white;
+  }
+
+.page-container {
+    width: 80%;
+    margin: 2vw auto;
+}
+
+.main-content-container{
+    display: flex;
+    flex-flow: row wrap; 
+}
+.secondary-content-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.details-container {
+    margin: 1vw 1vw;
+    flex-basis: 40%;
+}
+
+#cover {
+    width: 25%;
+    height: auto;
+  }
+
+#review {
+    width: 50%;
+    height: 20%;
+}
+
+@media screen and (max-width: 500px) {
+        #review {
+          width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+        }
+  }
